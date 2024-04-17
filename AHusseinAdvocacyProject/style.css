@@ -1,0 +1,246 @@
+/* Existing styles */
+
+/* CSS ruleset for paragraphs and headings */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Body styles */
+body {
+    background-color: #b46a6a;
+    background-image: url('');
+    font-family: Arial;
+    font-size: 20px;
+    color: #d0c8c8;
+}
+
+
+
+/* Link styles */
+a:link {
+    color: #b69fb7; 
+    text-decoration: none;
+}
+a:visited {
+    color: #b69fb7; 
+}
+a:hover {
+    color: #564848; 
+    text-decoration: underline; 
+}
+a:active {
+    color: #ffffff; 
+}
+
+/* buttons styles */
+button {
+    background-color:  #e3cedc;
+    border: none;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 32px;
+    cursor: pointer;
+}
+
+/* styles for header container */
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f1f1;
+    color: #000000;
+    margin-bottom: 20px; 
+}
+
+/* CSS for header image */
+.header-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+}
+
+/* CSS for header title */
+.header-title {
+    font-size: 24px;
+    color: #9e5757;
+}
+
+/* CSS for header buttons */
+.header-button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #b69fb7;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* footer*/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #b69fb7; 
+    color: #fff; 
+    text-align: center; 
+    padding: 10px 0; 
+}
+.footer a {
+    color: #fff; 
+    text-decoration: none; 
+    margin: 0 10px; 
+}
+
+/* Part 1: Navbar */
+
+/* General style rule set for all items in ul */
+.navbar ul {
+list-style-type: none;
+overflow: hidden;
+position: fixed;
+top: 0;
+left: 40%;
+width: 100%;
+margin-bottom: 20px;
+}
+
+/* Style rule set for individual li */
+.navbar ul li {
+float: left;
+margin: 10px;
+}
+
+/* Style rule set for individual li link */
+.navbar ul li a {
+display: block;
+text-decoration: none;
+color: #b69fb7; /* Adjust as needed */
+text-align: center;
+padding: 10px;
+}
+
+/* Style rule set for hovered link */
+.navbar ul li a:hover {
+background-color: #b69fb7; /* Adjust as needed */
+color: #fff;
+}
+/* Part 2: Flexbox */
+
+/* General style rule set for flex container */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+ 
+}
+  
+/* Style set for all flex-items */
+.flex-item {
+    background: white;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+  /* Add style to button */
+  #theme-button {
+
+  }
+
+
+ body.dark-mode {
+   background-color: black;
+   color:white ;
+
+ }
+
+/* Petition */ 
+.petition-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.petition-para {
+    width: 55%;
+    padding-right: 10px;
+}
+
+.signatures {
+    width: 45%;
+    padding-right: 10px;
+}
+
+/* Add to CSS file */
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background:pink;
+}
+
+.revealable {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+.revealable.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.navbar {
+  position: relative; 
+  z-index: 1000; 
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .revealable {
+    animation: none;
+    transition: none;
+  }
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: lightsteelblue;
+    color: black;
+    text-align: center;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
